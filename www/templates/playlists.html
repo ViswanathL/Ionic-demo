@@ -1,0 +1,16 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+<md-button class="md-fab md-fab-bottom-right right" aria-label="Insert Drive">
+    	<img src="img/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;" />
+      <!-- <md-icon md-svg-src="img/ic_insert_drive_file_24px.svg" ></md-icon> -->
+      <md-tooltip >
+        Insert Drive
+      </md-tooltip>
+    </md-button>
+</ion-view>
