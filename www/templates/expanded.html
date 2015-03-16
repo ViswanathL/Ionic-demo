@@ -1,0 +1,31 @@
+<ion-view view-title="Topics">
+  	<ion-content>
+		<div ng-controller="TopicsCtrl">
+		  <md-content>
+		    <md-list>
+		      <md-item ng-repeat="item in todos">
+		        <md-item-content md-ink-ripple>
+		          <div class="md-tile-left" >
+		              <img ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+			      </div>
+		          <div class="md-tile-content">
+		            <h3>{{item.what}}</h3>
+		            <h4>{{item.who}}</h4>
+		            <p>
+		              {{item.notes}}
+		            </p>
+		          </div>
+		        </md-item-content>
+		      </md-item>
+		    </md-list>
+		  </md-content>
+		</div>
+		<!-- FAB -->
+		<md-button class="md-fab md-fab-bottom-right right button_cir" aria-label="Insert Drive">
+    		<img src="img/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;" />
+	      	<md-tooltip >
+	        	Insert Drive
+	      	</md-tooltip>
+    	</md-button>
+	</ion-content>
+</ion-view>

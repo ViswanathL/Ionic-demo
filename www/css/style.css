@@ -12,3 +12,14 @@
 .tooltipdemoBasicUsage .right {
   top: 70px !important;
   right: 56px !important; }
+
+.button_cir {
+	background: #547768;
+}
+
+.face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px;
+}
